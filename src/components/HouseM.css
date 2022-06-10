@@ -1,0 +1,35 @@
+.houseM__container{
+    margin: 0px;
+    margin-top: -3px;
+    background-color: white;
+}
+.houseM__innerContainer{
+    margin: 6px;
+    display: grid;
+    grid-template-columns:1 ;
+    align-items: center;
+    justify-content: center;
+}
+.houseM__content{
+    margin-bottom: 4px;
+    margin:5px;
+    border-radius: 5px; 
+}
+.collapsible .content{
+    padding: 6px;
+    background-color: rgb(10, 53, 53);
+    width: auto;
+    margin: 5px;
+
+}
+.collapsible .header{
+    background-color: teal;
+    padding: 6px;
+    cursor: pointer;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    border-radius: 8px;
+    font-size: 12px;
+}
