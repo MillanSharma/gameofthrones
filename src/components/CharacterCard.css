@@ -1,44 +1,82 @@
-.character__container{
+.character__container {
     margin-top: 0px;
-
-}
-.character__inner{
+    background-color: rgb(63, 63, 63);
+    font-size: 15px;
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .character__inner {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 30px;
     margin-left: 40px;
     margin-right: 40px;
-}
-.character{
+  }
+  .character {
     margin: 15px;
-    height: 350px;
-    width: 250px;
+    height: 370px;
+    width: 270px;
     padding: 12px;
     color: white;
     border-radius: 8px;
     border: 2px solid teal;
-}
-
-.character > img{  
-    display: flex;  
+  }
+  
+  .character > img {
+    display: flex;
     justify-content: center;
     height: 200px;
     width: 200px;
     margin-top: -4px;
     border-radius: 100%;
     margin-left: 20px;
-    margin-bottom: 4px;    
-}
-
-.character__desc{
-    
-    background-image: linear-gradient(to right, rgb(77, 4, 4) , black);
-    height: 155px;
-    width: 268px;
+    margin-bottom: 4px;
+  }
+  
+  .character__desc {
+    background-image: linear-gradient(to right, rgb(77, 4, 4), black);
+    height: 162px;
+    width: 275px;
     margin-left: -13px;
-    padding: 4px;
+    padding: 10px;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
-}
+  }
+  
+  .character__desc > * {
+    margin: 8px;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: sticky;
+    bottom: 10px;
+  }
+  
+  .buttonWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(rgba(169, 89, 19, 0.73) 0%, rgb(0, 0, 0) 100%);
+    width: 30%;
+    border-radius: 30px;
+  }
+  
+  .buttonWrapper > button {
+    margin-right: 30px;
+    padding: 10px 20px;
+    background-color: rgb(27, 27, 27);
+    color: lightgrey;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  

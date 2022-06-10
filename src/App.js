@@ -14,7 +14,7 @@ function App() {
         <Navigation/>
         <Routes>
           <Route exact path="/" element={<Welcome/>}></Route>
-          <Route exact path="/shop" element={<CharacterCard/>}></Route>
+          <Route exact path="/char-card" element={<CharacterCard/>}></Route>
           <Route exact path = "/cart" element={<Cart/>}></Route>
           <Route exact path="/houses" element={<Houses/>}></Route>
           <Route exact path="/buildtshirt" element={<BuildTshirt/>}></Route>
