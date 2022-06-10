@@ -6,6 +6,7 @@ function HouseM() {
     const config = {
         duration:1300
     }
+
 const [items,setItems] =useState([]);
 const { getCollapseProps, getToggleProps } = useCollapse(config);
 useEffect(() => {
@@ -22,6 +23,7 @@ useEffect(() => {
        <div className='houseM__innerContainer'>
             {items.map((item,key=item.name)=>(
               <div  key={key} className="houseM__content">
+
                 <div className='collapsible'>
                <div className='header' {...getToggleProps(
                 {
@@ -32,7 +34,7 @@ useEffect(() => {
                 {item.name}</div>
                <div {...getCollapseProps()}>
                 <div className='content'>
-                       <p>Coat of Arms:<br/>{item.coatOfArms}</p> 
+               <p>Coat of Arms:<br/>{item.coatOfArms}</p> 
                <p>Region: <br/>{item?.region}</p>
                <p>Words:<br/>{item?.words}</p>
                </div>

@@ -6,6 +6,7 @@ import Welcome from './components/Welcome';
 import CharacterCard from "./components/CharacterCard"
 import Cart from "./components/Cart"
 import Houses from "./components/Houses"
+import BuildTshirt from './components/BuildTshirt';
 function App() {
   return (
     <div className="App">
@@ -16,6 +17,8 @@ function App() {
           <Route exact path="/shop" element={<CharacterCard/>}></Route>
           <Route exact path = "/cart" element={<Cart/>}></Route>
           <Route exact path="/houses" element={<Houses/>}></Route>
+          <Route exact path="/buildtshirt" element={<BuildTshirt/>}></Route>
+
         </Routes>
       </Router>
           </div>
