@@ -11,7 +11,7 @@ function Navigation() {
         <div className='navigation__toggle'>      
                         <div className='about__and__shop'>
               <div className='shop' onClick={()=>navigate("/shop")}>Shop</div>
-              <div className='about'>About</div>
+              <div className='houses' onClick={()=>navigate("/houses")}>Houses</div>
             </div>
         </div>
         <div className='navigation__title'>

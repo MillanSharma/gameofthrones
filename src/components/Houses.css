@@ -1,0 +1,311 @@
+.page__container{
+    height: 88.8vh;
+    max-width: 100%;
+    background-color: black;
+}
+.about__container{
+    color: black; 
+    max-width: 100%;
+    height: 53vh;
+    object-fit: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -15px;
+}
+.scrollable__container{
+    width: 100vh;
+    height: 100vw;
+    overflow-y: scroll;
+    transform: rotate(-90deg);
+    background-color: teal;
+    opacity: 100%;
+    overflow-x:hidden;
+    margin-top:0px;
+    margin-right: -30px;
+    margin-left: -30px;
+    margin-bottom: 0px;
+    scroll-behavior: smooth;
+    
+}
+.scrolls__Algood{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 810px;
+    height: 1010px;
+    margin-bottom: -190px;
+    /* background-image:url(""); */
+    background-color: #166A8E; 
+    transform: rotate(90deg);
+    object-fit: contain;
+    margin-top: -95px;
+    z-index: 9;
+}
+.scrolls__imgAlgood{
+    position:absolute;
+    width: 60px;
+    height: 60px;
+    top:345px;
+    left: 40px;
+    content: url("https://awoiaf.westeros.org/thumb.php?f=House_Algood.svg&width=1200");
+    object-fit: contain;
+}
+.scrolls__Godsgrace{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 810px;
+    height: 1010px;
+    margin-bottom:-190px;
+    background-color: #B22222; 
+    opacity: 100%;
+    transform: rotate(90deg);
+    margin-top: -80px;
+    object-fit: contain;
+}
+.scrolls__imgGodsgrace{
+    position:absolute;
+    width: 60px;
+    height: 60px;
+    top:345px;
+    left: 40px;
+    content: url("https://awoiaf.westeros.org/thumb.php?f=House_Allyrion.svg&width=1200");
+    object-fit: contain;
+}
+/* not displaying because nothing much is recieved from the endpoint */
+
+.scrolls__Amber{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 810px;
+    height: 1010px;
+    background-color: #FCFEF0; 
+    opacity: 100%;
+    transform: rotate(90deg);
+    margin-top: -80px;
+    object-fit: contain;
+}
+.scrolls__imgAmber{
+    position:absolute;
+    width: 60px;
+    height: 60px;
+    top:345px;
+    left: 40px;
+    content: url("https://static.wikia.nocookie.net/gameofthrones/images/2/2f/House-Umber-Main-Shield.PNG");
+    object-fit: contain;
+}
+/* not displaying because nothing much is recieved from the endpoint */
+.scrolls__Ambrose{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 810px;
+    height: 1010px;
+    background-color: #331C0E; 
+    opacity: 100%;
+    transform: rotate(90deg);
+    margin-top: -80px;
+    object-fit: contain;
+}
+.scrolls__imgAmbrose{
+    position:absolute;
+    width: 60px;
+    height: 60px;
+    top:70px;
+    left: 40px;
+    content: url("https://awoiaf.westeros.org/images/thumb/6/69/House_Ambrose.svg/375px-House_Ambrose.svg.png");
+    object-fit: contain;
+}
+.scrolls__Appleton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 810px;
+    height: 1010px;
+    background-color: #261E1D; 
+    opacity: 100%;
+    transform: rotate(90deg);
+    margin-top: -80px;
+    margin-bottom:-190px;
+    object-fit: contain;
+}
+.scrolls__imgAppleton{
+    position:absolute;
+    width: 60px;
+    height: 60px;
+    top:345px;
+    left: 40px;
+    content: url("https://awoiaf.westeros.org/images/thumb/9/95/House_Appleton.svg/375px-House_Appleton.svg.png");
+    object-fit: contain;
+}
+/* not displaying because nothing much is recieved from the endpoint */
+.scrolls__Gulltown{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 810px;
+    height: 1010px;
+    background-color: #002C3A; 
+    /* background-color: black; */
+    opacity: 100%;
+    transform: rotate(90deg);
+    margin-top: -80px;
+    object-fit: contain;
+}
+.scrolls__imgGulltown{
+    position:absolute;
+    width: 60px;
+    height: 60px;
+    top:70px;
+    left: 40px;
+    content: url("https://awoiaf.westeros.org/images/thumb/d/dc/House_Grafton.svg/1200px-House_Grafton.svg.png");
+    object-fit: contain;
+
+}
+.scrolls__Eyrie{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 810px;
+    height: 1010px;
+    background-color: #FFDB00; 
+    opacity: 100%;
+    transform: rotate(90deg);
+    margin-top: -80px;
+    margin-bottom:-190px;
+    object-fit: contain;
+}
+.scrolls__imgEyrie{
+    position:absolute;
+    width: 60px;
+    height: 60px;
+    top:345px;
+    left: 40px;
+    content: url("https://static.wikia.nocookie.net/gameofthrones/images/1/15/House-Arryn-Main-Shield.PNG");
+    object-fit: contain;
+}
+.scrolls__Ashford{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 810px;
+    height: 1010px;
+    background-color: #FF404C; 
+    opacity: 100%;
+    transform: rotate(90deg);
+    margin-top: -80px;
+    margin-bottom:-190px;
+    object-fit: contain;
+}
+.scrolls__imgAshford{
+    position:absolute;
+    width: 60px;
+    height: 60px;
+    top:345px;
+    left: 40px;
+    content: url("https://awoiaf.westeros.org/images/thumb/a/a3/House_Ashford.svg/375px-House_Ashford.svg.png");
+    object-fit: contain;
+}
+/* not displayed because nothing much is returned from the api endpoint */
+.scrolls__Ashwood{ 
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 810px;
+    height: 1010px;
+    background-color: #C2AD77; 
+    opacity: 100%;
+    transform: rotate(90deg);
+    margin-top: -80px;
+    object-fit: contain;
+}
+.scrolls__imgAshwood{
+    position:absolute;
+    width: 60px;
+    height: 60px;
+    top:345px;
+    left: 40px;
+    content: url("https://static.wikia.nocookie.net/gotrp/images/9/9c/Agot_Robert_Baratheon_FULL-0.jpg");
+    object-fit: contain;
+}
+.scrolls__Harrenhal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 810px;
+    height: 1010px;
+    background-color: #002C3A; 
+    opacity: 100%;
+    transform: rotate(90deg);
+    margin-top: -80px;
+    object-fit: contain;
+    margin-bottom:-110px;
+
+}
+.scrolls__imgHarrenhal{
+    position:absolute;
+    width: 60px;
+    height: 60px;
+    top:345px;
+    left: 40px;
+    content: url("https://awoiaf.westeros.org/images/thumb/0/04/House_Towers_%28Harrenhal%29.svg/250px-House_Towers_%28Harrenhal%29.svg.png");
+    object-fit: contain;
+}
+.scroll__title{
+    display: flex;
+    position:absolute;
+    top:350px;
+    color: aliceblue;
+    left: 125px;
+}
+.scroll__content{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    top:430px;
+    left:10px;
+    width: 780px;
+    height: 350px;
+    background-color:#FFFAEC;
+    color: black;
+    border-radius: 9px;
+    margin: 10px;
+}
+.scroll__alt__title{
+    width: 70px;
+    height: 50px;
+    font-size: 30px;
+}
+.scroll__content>p{
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: 17px;
+    font-weight: 700;
+    word-spacing: 3px;
+}
+.scroll__content>h2{
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.scroll__content>p>h2{
+    display: flex;
+    flex-direction: flex-start;
+    align-items: flex-start;
+    justify-content: center;
+}
+@media screen and (max-width:830px){
+    .page__container{
+        height: 92.9vh; 
+    }
+   
+    
+}

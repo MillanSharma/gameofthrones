@@ -135,7 +135,7 @@ z-index: 9999;
         color: whitesmoke;
 
     }
-    .about{
+    .houses{
         cursor: pointer;
         margin-left: 10px;
         margin-right: 10px;
@@ -187,7 +187,7 @@ z-index: 9999;
              width: auto;
              /* display: none; */
          }
-         .about{
+         .houses{
              width: auto;
              font-size: 10px;
              cursor: pointer;
@@ -228,14 +228,14 @@ z-index: 9999;
         margin-bottom: 3px;
         width: auto;
     }
-    .about{
+    .houses{
         width: auto;
         font-size: 7px;
         cursor: pointer;
     }
 }
 @media screen and (max-width: 550px) {
-.about{
+.houses{
     display: none;
 }
 }
