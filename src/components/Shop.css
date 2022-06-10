@@ -1,0 +1,239 @@
+.shop__container{
+    width: 99.4%;
+    margin-top: 0px;
+}
+.shop__about__img{
+    width: 190px;
+    height: 190px;
+    object-fit: contain;
+    margin: 15px;
+    flex:2;
+
+}
+.shop__about{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    width: 90%;
+    height: auto;
+    background-color:black;
+    color: white;
+    margin-left: 70px;
+    margin-top: 80px;
+    border-radius: 9px;
+    padding: 8px;
+    
+}
+.shop__about__details{
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex: 9;
+}
+.shop__items{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding: 40px;
+    margin:30px;
+    width: auto;
+    height: auto;
+    flex-wrap: wrap;
+    
+}
+.shop__card{
+    background-color: #575047;
+    height: 500px;
+    width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: 60px;
+    border-radius: 9px;
+}
+.shop__item__1{
+    background-color:white;
+    height: 300px;
+    width: 200px;
+    border-radius: 8px;
+    content: url("https://images-na.ssl-images-amazon.com/images/I/91dSMhdIzTL.jpg");
+    
+
+}
+.shop__item__1:hover{
+    box-shadow: 8px 8px 15px rgba(10, 10, 10, 0.75);
+}
+.shop__item__2{
+    background-color:white;
+    height: 300px;
+    width: 200px;
+    border-radius: 8px;
+    content: url("https://upload.wikimedia.org/wikipedia/en/3/39/AClashOfKings.jpg");
+    /* transform:rotate(180deg); */
+}
+.shop__item__2:hover{
+    box-shadow: 8px 8px 15px rgba(10, 10, 10, 0.75);
+}
+.shop__item__3{
+    background-color:white;
+    height: 300px;
+    width: 200px;
+    border-radius: 8px;
+    content: url("https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1353235205l/768889.jpg");
+    /* transform:rotate(180deg); */
+}
+.shop__item__3:hover{
+    box-shadow: 8px 8px 15px rgba(10, 10, 10, 0.75);
+}
+.shop__item__4{
+    background-color:white;
+    height: 300px;
+    width: 200px;
+    border-radius: 8px;
+    content: url("https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1443806558l/13501.jpg");
+    /* transform:rotate(180deg); */
+}
+.shop__item__4:hover{
+    box-shadow: 8px 8px 15px rgba(10, 10, 10, 0.75);
+}
+.shop__item__5{
+    background-color:white;
+    height: 300px;
+    width: 200px;
+    border-radius: 8px;
+    content: url("https://awoiaf.westeros.org/images/a/a3/AFeastForCrows.jpg");
+    /* transform:rotate(180deg); */
+}
+.shop__item__5:hover{
+    box-shadow: 8px 8px 15px rgba(10, 10, 10, 0.75);
+}
+.shop__item__6{
+    background-color:white;
+    height: 300px;
+    width: 200px;
+    border-radius: 8px;
+    content: url("https://images-na.ssl-images-amazon.com/images/I/618RfZlGg5S.jpg");
+    /* transform:rotate(180deg); */
+}
+.shop__item__6:hover{
+    box-shadow: 8px 8px 15px rgba(10, 10, 10, 0.75);
+}
+.shop__item__7{
+    background-color:white;
+    height: 300px;
+    width: 200px;
+    border-radius: 8px;
+    content: url("https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1397654538l/11350430.jpg");
+    /* transform:rotate(180deg); */
+}
+.shop__item__7:hover{
+    box-shadow: 8px 8px 15px rgba(10, 10, 10, 0.75);
+}
+.shop__item__8{
+    background-color:white;
+    height: 300px;
+    width: 200px;
+    border-radius: 8px;
+    content: url("https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1581625286l/10664113._SX318_.jpg");
+    /* transform:rotate(180deg); */
+}
+.shop__item__1:hover{
+    box-shadow: 8px 8px 15px rgba(10, 10, 10, 0.75);
+}
+.shop__item__9{
+    background-color:white;
+    height: 300px;
+    width: 200px;
+    border-radius: 8px;
+    content: url("https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1511221635l/36632543._SY475_.jpg");
+    /* transform:rotate(180deg); */
+}
+.shop__item__8:hover{
+    box-shadow: 8px 8px 15px rgba(10, 10, 10, 0.75);
+}
+.shop__item__10{
+    background-color:white;
+    height: 300px;
+    width: 200px;
+    border-radius: 8px;
+    content: url("https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1404616147l/20168816.jpg");
+    /* transform:rotate(180deg); */
+}
+.shop__item__10:hover{
+    box-shadow: 8px 8px 15px rgba(10, 10, 10, 0.75);
+}
+
+.shop__item__img{
+    object-fit: contain;
+    position: relative;
+    height: 305px;
+    width: 200px;
+    
+}
+.shop__item__info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    transform:rotate(180deg) ;
+}
+
+.shop__item__info >button{
+ cursor: pointer;      
+ width: 180px;
+ height: 40px; 
+}
+@media screen and (max-width: 903px) {
+    .shop__card{
+        background-color: #575047;
+        height: 400px;
+        width: 260px;
+        display: flex;
+        align-items: center;
+        justify-content:space-around;
+        padding: 20px;
+        flex-wrap: wrap;
+        /* margin: auto; */
+        margin-bottom: 40px;
+        border-radius: 9px;
+        /* margin-left: 0px; */
+        
+    }
+    .shop__about{
+        display: none;
+    }
+    .shop__item__info>span{
+        font-size: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .shop__item__info>button{
+        font-size: 12px;
+        width: 150px;
+    }
+    
+        .shop__item__1,.shop__item__2,.shop__item__3,
+        .shop__item__4, .shop__item__5, .shop__item__6,
+        .shop__item__7,.shop__item__8,.shop__item__9,
+        .shop__item__10
+        {
+            transform:rotate(180deg);
+            box-shadow: 4px 0 15px rgba(0,0,0,0.75);
+        }
+
+}
+@media screen and (max-width: 480px) 
+{
+/* .shop__item__1,.shop__item__2,.shop__item__3,
+.shop__item__4, .shop__item__5, .shop__item__6,
+.shop__item__7,.shop__item__8,.shop__item__9,
+.shop__item__10
+{
+    transform:rotate(180deg);
+    box-shadow: 4px 0 15px rgba(0,0,0,0.75);
+} */
+}
