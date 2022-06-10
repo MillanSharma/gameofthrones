@@ -4,9 +4,8 @@ import "./HouseM.css"
 import useCollapse from 'react-collapsed';
 function HouseM() {
     const config = {
-        duration:1500
+        duration:1300
     }
-const [isExpanded, setExpanded] = useState(false);
 const [items,setItems] =useState([]);
 const { getCollapseProps, getToggleProps } = useCollapse(config);
 useEffect(() => {
@@ -14,7 +13,10 @@ useEffect(() => {
           .get("https://www.anapioficeandfire.com/api/houses")
           .then((response) => setItems(response.data))
           .catch((err) => console.log(err));
+
       }, []);
+      let arr = Array(items.length).fill(false)
+      const [isExpanded, setExpanded] = useState(arr);
   return (
     <div className='houseM__container'>
        <div className='houseM__innerContainer'>
@@ -24,7 +26,6 @@ useEffect(() => {
                <div className='header' {...getToggleProps(
                 {
                     onClick:()=>setExpanded((prevExpanded)=>!prevExpanded)
-
                 }
                )}
                >
@@ -39,8 +40,6 @@ useEffect(() => {
               </div>
             </div>
                 ))}
-          
-
         </div>
 
     </div>

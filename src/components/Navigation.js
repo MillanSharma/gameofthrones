@@ -10,7 +10,7 @@ function Navigation() {
     <div className='navigation__container'>
         <div className='navigation__toggle'>      
                         <div className='about__and__shop'>
-              <div className='shop' onClick={()=>navigate("/shop")}>Shop</div>
+              <div className='shop' onClick={()=>navigate("/shop")}>Char-Card</div>
               <div className='houses' onClick={()=>navigate("/houses")}>Houses</div>
             </div>
         </div>

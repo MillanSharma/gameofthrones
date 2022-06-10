@@ -209,15 +209,13 @@ z-index: 9999;
         height: 30px;
     }
   }
-  @media screen and (max-width: 640px) {
-    .about__and__shop{
-             
+  @media screen and (max-width: 880px) {
+    .about__and__shop{  
         display: flex;     
         flex-direction: column;  
         width: auto;
-        height: 25px;
+        height: 45px;
        margin-left: auto;
-       margin-top: 17px;
        border-radius: 3px;
        
     }
@@ -225,7 +223,7 @@ z-index: 9999;
         font-size: 7px;
         cursor: pointer;
         margin-right: 8px;
-        margin-bottom: 3px;
+        margin-bottom: 2px;
         width: auto;
     }
     .houses{
@@ -233,9 +231,4 @@ z-index: 9999;
         font-size: 7px;
         cursor: pointer;
     }
-}
-@media screen and (max-width: 550px) {
-.houses{
-    display: none;
-}
 }
