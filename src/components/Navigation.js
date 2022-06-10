@@ -23,6 +23,7 @@ function Navigation() {
        
         <div className='navigation__cart'>
             <LocalMallIcon 
+            onClick={()=>navigate("/cart")}
             className='cart'  
             style={{width:'50px', height:"50px",color:"black"}}
             />

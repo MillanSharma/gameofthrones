@@ -53,7 +53,7 @@ function Shop() {
     </motion.div>
     <div className='shop__item__info'>
         <span>{book.name}</span>
-        <h3>${parseInt(book.isbn.substring(book.isbn.length - 3))}</h3>
+        <h3>₹{parseInt(book.isbn.substring(book.isbn.length - 3))}</h3>
     <button>Add to cart</button>
         </div>
     </motion.div>
