@@ -242,3 +242,38 @@ justify-content:center;
     display: flex;
 
 }
+
+@media screen and (max-width: 720px) {
+    .item__image1, .item__image2, .item__image3, .item__image4, .item__image5,
+    .item__image6, .item__image7, .item__image8, .item__image9, .item__image10,
+    .item__image11, .item__image12, .item__image13, .item__image14{
+        display: none;
+    }
+    .cart__title>h2{
+        margin-top: 30px;
+    font-size: 20px;
+    }
+    .cart__sumtotal{
+        margin-top: 20px;
+        width: 240px;
+        height: 180px;
+    }
+    .cart__container{
+        margin: 5px;
+        width: 85%;
+    }
+    .cart__productName, .cart__quantity, .cart__price,
+    .cart__total{
+        font-size: 13px;
+        padding: 5px;
+        
+    }
+    .ite__increase__decrease,.item__price, .item__total{
+        margin-right: 10px;
+        margin-left: 20px;
+    }
+    .item__name>h4{
+        font-size: 8px;
+        margin-left: -10px;
+    }
+    }
