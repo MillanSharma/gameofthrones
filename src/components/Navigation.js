@@ -22,13 +22,13 @@ function Navigation() {
       <div className="navigation__toggle">
         <div className="about__and__shop">
           <div className="shop" onClick={() => navigate("/char-card")}>
-            Char-Card
+            Gallery
           </div>
           <div className="houses" onClick={() => navigate("/houses")}>
             Houses
           </div>
           <div className="build" onClick={() => navigate("/buildtshirt")}>
-            Build
+            Shop
           </div>
         </div>
       </div>

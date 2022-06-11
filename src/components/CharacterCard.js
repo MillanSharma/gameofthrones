@@ -7,7 +7,7 @@ function CharacterCard() {
   const [characters, setCharacter] = useState([]);
   let [pageNumber, setPageNumber] = useState(2);
   const [isLoading, setIsLoading] = useState(false);
-
+//for pagination 
   let api = `https://www.anapioficeandfire.com/api/characters?page=${pageNumber}`;
 
   useEffect(() => {
@@ -37,6 +37,7 @@ function CharacterCard() {
                   <div className="character" key={key}>
                     <img
                       src={`https://ui-avatars.com/api/?name=${character?.name}}&&background=101010&color=fff`}
+                      alt=""
                     />
 
                     <div className="character__desc">

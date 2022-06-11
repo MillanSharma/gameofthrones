@@ -27,7 +27,7 @@ function Cart() {
         <div className="empty__container">
           <div className="empty__cart">Cart is empty</div>
           <button
-            onClick={() => navigate("/shop")}
+            onClick={() => navigate("/buildtshirt")}
             className="empty__continueShopping"
           >
             Continue Shopping
@@ -43,9 +43,10 @@ function Cart() {
           </div>
 
           <div className="cart__items">
-            {cart.cartItems?.map((val) => (
-              <>
-                <div className="cart__content">
+            {cart.cartItems?.map((val,key=val.index) => (
+            
+              // {console.log(key)}
+                <div className="cart__content" key={key} >
                   <div className="item__name">
                     <div className="blackTshirt">
                       <img
@@ -54,7 +55,9 @@ function Cart() {
                         className="tshirtImage"
                       />
 
-                      <img src={val.houseImg} className="houseOnTshirtCart" />
+                      <img src={val.houseImg} 
+                      alt=""
+                      className="houseOnTshirtCart" />
 
                       <div className="textOnTshirtCart">{val.text}</div>
                     </div>
@@ -72,7 +75,7 @@ function Cart() {
                   </button>
                   </div>
                 </div>
-              </>
+              
             ))}
           </div>
 
@@ -82,7 +85,7 @@ function Cart() {
             <button className="checkout__btn">CHECK OUT</button>
             <button
               className="continue__shopping"
-              onClick={() => navigate("/shop")}
+              onClick={() => navigate("/buildtshirt")}
             >
               Continue Shopping
             </button>

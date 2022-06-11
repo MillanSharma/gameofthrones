@@ -36,6 +36,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   margin: 10px;
   margin-top: 20px;
 }
@@ -52,9 +53,10 @@
 .tshirt__builder {
   display: flex;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
   height: 800px;
-  width: 800px;
+  width: 100%;
 }
 .tshirt__builder > img {
   display: flex;
@@ -64,9 +66,15 @@
   width: 700;
   object-fit: contain;
 }
-@media screen and (max-width: 720px) {
+.build__addtocart{
+  background-color: black;
+  color: white;
+  height: 55px;
+  border-radius: 8px;
 }
-
+.build__addtocart:hover{
+  color:darkgray
+}
 .blackTshirt {
   position: relative;
 }
@@ -89,4 +97,36 @@
   justify-content: center;
   align-items: center;
   width: 30%;
+}
+@media screen and (max-width: 480px) {
+.tshirt__label{
+  font-size: 18px;
+}
+.tshirt__container>h2{
+  font-size: 18px;
+}
+  .build__tshirt{
+  margin-top: -390px;
+  margin-left: 45px;
+  width: 300px;
+  height: 300px;
+}
+.houseOnTshirt {
+  top: -200px;
+  left: 41%;
+  height: 100px;
+  width: 100px;
+}
+.textOnTshirt {
+  top:-90px;
+  left: 41%;
+}
+.logo__container>img{
+  width: 90px;
+  height: 90px;
+}
+.tshirt__form >input{
+  width: 240px;
+  border-radius: 2px solid black;
+}
 }

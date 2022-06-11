@@ -1,20 +1,22 @@
 import React, { useState ,useEffect} from 'react'
 import "./Houses.css";
 import axios from "axios"
-import HouseM from './HouseM.js';
-function About() {
-    const [hover, setHover] = useState(false);
+import HouseM from "./HouseM.js";
+function Houses() {
     const [items,setItems] =useState([]);
     const [windowWidth, setWindowWidth] = useState(0);
     let resizeWindow = () => {
       setWindowWidth(window.innerWidth);
     };
   
+    // for taking care of the window size to display accordingly
     useEffect(() => {
       resizeWindow();
       window.addEventListener("resize", resizeWindow);
       return () => window.removeEventListener("resize", resizeWindow);
     }, []);
+
+
     useEffect(() => {
         axios
           .get("https://www.anapioficeandfire.com/api/houses")
@@ -22,8 +24,8 @@ function About() {
           .catch((err) => console.log(err));
       }, []);
   return (
-    <>
-    {windowWidth <= 710 ? (
+    <> 
+    {windowWidth <= 710 ? ( 
    <HouseM />
     ):<>
     <div className='page__container'>
@@ -35,8 +37,7 @@ function About() {
               className={`scrolls__${item.name.substring(item.name.lastIndexOf(" ")+1)}`}>
                <div className={`scrolls__img${item.name.substring(item.name.lastIndexOf(" ")+1)}`}/>
                <div className='scroll__title'><h2>{item.name}</h2></div>
-               <div onMouseEnter={()=>setHover(true)}
-                    onMouseLeave={()=>setHover(false)}
+               <div 
                     className='scroll__content'>
                        <p>Coat of Arms:<br/>{item.coatOfArms}</p> 
                <p>Region: <br/>{item?.region}</p>
@@ -46,10 +47,7 @@ function About() {
               </div>
             </div>
                 ))}
-          
-
         </div>
-
     </div>
     </div>
     </>}
@@ -57,4 +55,4 @@ function About() {
   )
 }
 
-export default About
+export default Houses;

@@ -2,12 +2,10 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import "./HouseM.css"
 import useCollapse from 'react-collapsed';
-import { List } from '@mui/material';
 function HouseM() {
     const config = {
         duration:1300
     }
-
 const [items,setItems] =useState([]);
 const { getCollapseProps, getToggleProps } = useCollapse(config);
 useEffect(() => {
@@ -48,4 +46,4 @@ useEffect(() => {
   )
 }
 
-export default HouseM
+export default HouseM;

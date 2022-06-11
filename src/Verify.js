@@ -26,7 +26,7 @@ function Verify({ setIsVerified }) {
                 setOptionSelected(3);
                 setTimeout(() => {
                   setIsVerified(true);
-                }, 8000);
+                }, 4000);
               }}
             >
               Valar dohaeris
@@ -48,7 +48,7 @@ function Verify({ setIsVerified }) {
           </div>
         </div>
       </div>
-      {optionSelected === 3 && <Confetti width={width} height={height} />}
+      {optionSelected === 3 && <Confetti width={width-40} height={height} />}
     </div>
   );
 }

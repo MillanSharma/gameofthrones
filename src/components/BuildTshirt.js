@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "./BuildTshirt.css";
-
 import { useSelector, useDispatch } from "react-redux";
 import { getTotals, addToCart } from "../slices/cartSlice";
 
@@ -23,8 +22,10 @@ function BuildTshirt() {
       text: text,
     };
     dispatch(addToCart(product));
+    setSelectedHouse(null);
+    setText("")
   };
-
+// static image urls for logo
   const houselist = {
     lannister:
       "https://www.freelogoservices.com/blog/wp-content/uploads/House_Lannister.svg_.png",
@@ -34,6 +35,15 @@ function BuildTshirt() {
       "https://www.freelogoservices.com/blog/wp-content/uploads/House_Greyjoy.svg_.png",
     stark:
       "https://www.freelogoservices.com/blog/wp-content/uploads/House_Stark.svg_.png",
+    tyrell:
+    "https://www.freelogoservices.com/blog/wp-content/uploads/House_Tyrell.svg_.png",
+    martell:
+    "https://www.freelogoservices.com/blog/wp-content/uploads/House_Martell.svg_-470x470.png",
+    targaryan:
+    "https://www.freelogoservices.com/blog/wp-content/uploads/House_Targaryen.svg_.png",
+    baratheons:
+    "https://www.freelogoservices.com/blog/wp-content/uploads/House_Baratheon.svg_.png"
+
   };
 
   return (
@@ -63,6 +73,7 @@ function BuildTshirt() {
           <img
             src="https://www.nicepng.com/png/full/72-724487_black-tshirt-front-and-back-png-vector-black.png"
             alt="Black tshirt"
+            className="build__tshirt"
           />
           {selectedHouse && (
             <img
@@ -73,7 +84,15 @@ function BuildTshirt() {
           )}
           {text && <div className="textOnTshirt">{text}</div>}
         </div>
-        <button onClick={handleAddToCart}>Add to cart</button>
+        {selectedHouse==null || text==="" ?
+          " ":
+          (
+
+            <button
+            className="build__addtocart"
+            onClick={handleAddToCart}>Add to cart</button>
+            )  
+        }
       </div>
     </div>
   );

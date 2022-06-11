@@ -60,13 +60,9 @@
   align-items: center;
   flex: 2;
 }
-.cart__total {
-  display: flex;
-  flex: 3;
-  flex-direction: column;
-}
+
 .cart__items {
-  margin: 15px;
+  
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -116,21 +112,8 @@
 .remove__button_div > button:hover{
   color: gray;
 }
-.item__total {
-  display: flex;
-  flex: 3;
-  flex-direction: column;
-}
 
-.clear__cart {
-  width: 150px;
-  height: 40px;
-  margin-left: 20px;
-  background-origin: whitesmoke;
-  border-radius: 5px;
-  border: 1px solid black;
-  cursor: pointer;
-}
+
 .cart__sumtotal {
   display: block;
   float: right;
@@ -231,6 +214,7 @@ display: none;
     margin-left: -20px;
   }
   .cart__sumtotal{
-    margin-right: 30px;
+    margin-right: 50px;
+    margin-top: 20px;
   }
 }
