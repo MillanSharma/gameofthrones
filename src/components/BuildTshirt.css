@@ -1,70 +1,92 @@
-.tshirt__container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content:space-around;
-    width: auto;
+.tshirt__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: auto;
 }
-.tshirt__container > h2{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 10px;
-    margin-top: 20px;
+.tshirt__container > h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  margin-top: 20px;
 }
-.logo__container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 30px;
-    background-color: rgb(245, 231, 231);
-    margin-left: 50px;
-    margin-right: 50px;
-    flex-wrap: wrap;
-    border-radius: 14px;
-    }
-.logo__container>img{
-    height: 180px;
-    width: 180px;
-    object-fit: contain;
-    background-color: white;
-    margin: 5px;
-    border-radius: 8px;
-    cursor: pointer;
+.logo__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  background-color: rgb(245, 231, 231);
+  margin-left: 50px;
+  margin-right: 50px;
+  flex-wrap: wrap;
+  border-radius: 14px;
 }
-.tshirt__form{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 10px;
-    margin-top: 20px;
-    
+.logo__container > img {
+  height: 180px;
+  width: 180px;
+  object-fit: contain;
+  background-color: white;
+  margin: 5px;
+  border-radius: 8px;
+  cursor: pointer;
 }
-.tshirt__form > input{
-    width: 340px;
+.tshirt__form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  margin-top: 20px;
 }
-.tshirt__label{
-    font-size: 24px;
-    font-weight: bold;
+.tshirt__form > input {
+  width: 340px;
 }
-.tshirt__text{
-    height: 30px;
+.tshirt__label {
+  font-size: 24px;
+  font-weight: bold;
 }
-.tshirt__builder{
-display: flex;
-align-items: center;
-justify-content: center;
-    height: 800px;
-    width: 800px;
+.tshirt__text {
+  height: 30px;
 }
-.tshirt__builder > img{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 700px;
-    width: 700;
-    object-fit: contain;
+.tshirt__builder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 800px;
+  width: 800px;
+}
+.tshirt__builder > img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 700px;
+  width: 700;
+  object-fit: contain;
 }
 @media screen and (max-width: 720px) {
+}
 
+.blackTshirt {
+  position: relative;
+}
+
+.houseOnTshirt {
+  position: absolute;
+  top: 20%;
+  left: 34%;
+  height: 150px;
+  width: 150px;
+  object-fit: contain;
+}
+
+.textOnTshirt {
+  position: absolute;
+  top: 55%;
+  left: 34%;
+  color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
 }

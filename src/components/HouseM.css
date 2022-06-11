@@ -12,24 +12,24 @@
 }
 .houseM__content{
     margin-bottom: 4px;
-    margin:5px;
+    margin:8px;
     border-radius: 5px; 
+    margin-left: 8px;
 }
 .collapsible .content{
     padding: 6px;
     background-color: rgb(239, 247, 247);
-    width: auto;
-    margin: 5px;
-
+    width: 90%;
 }
 .collapsible .header{
     background-color: teal;
     padding: 6px;
     cursor: pointer;
-    display: grid;
+    display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     height: 60px;
+    width: 90%;
     border-radius: 8px;
-    font-size: 12px;
+    color: white;
 }
