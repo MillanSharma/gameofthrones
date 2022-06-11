@@ -12,6 +12,10 @@
   margin: 10px;
   margin-top: 20px;
 }
+.tshirt__container>h3{
+  margin-top: 10px;
+  color: gray;
+}
 .logo__container {
   display: flex;
   align-items: center;
@@ -31,6 +35,10 @@
   margin: 5px;
   border-radius: 8px;
   cursor: pointer;
+  border: 1px solid black;
+}
+.logo__container > img:hover{
+  background-color: lightgray
 }
 .tshirt__form {
   display: flex;
@@ -128,5 +136,8 @@
 .tshirt__form >input{
   width: 240px;
   border-radius: 2px solid black;
+}
+.tshirt__container>h3{
+font-size: 14px;
 }
 }

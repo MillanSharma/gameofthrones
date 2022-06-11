@@ -48,6 +48,7 @@ function BuildTshirt() {
 
   return (
     <div className="tshirt__container">
+      <h3>design your custom t-shirt</h3>
       <h2>Choose your house</h2>
       <div className="logo__container">
         {Object.keys(houselist).map((val) => (
