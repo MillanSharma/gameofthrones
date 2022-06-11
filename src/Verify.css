@@ -25,7 +25,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
 }
 
 .header {
@@ -45,7 +44,7 @@
   margin: 20px;
   white-space: nowrap;
   cursor: pointer;
-  width: 300px;
+  width: 180px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -81,14 +80,15 @@
   .verifyContainer {
     height: 80%;
     width: 90%;
-    
+  
   }
   .options {
+    flex-direction: column;
     
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+}
+.rightOption{
+  margin-top: -20px;
+}
   .option1,
 .option2,
 .option3,
@@ -97,6 +97,7 @@
   padding: 5px 40px;
   border-radius: 20px;
   margin: 20px;
+  width: 240px;
   white-space: nowrap;
   cursor: pointer;
 }
@@ -117,4 +118,7 @@
     width: 160px;
     padding: 10px 40px;
   }
+  .options {
+    flex-direction: column;
+}
 }

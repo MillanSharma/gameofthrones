@@ -94,6 +94,7 @@ z-index: 9999;
         cursor: pointer;
         margin-left: 10px;
         margin-right: 10px;
+        color: white;
     }
     .build:hover, .houses:hover, .shop:hover{
         color:gray;
