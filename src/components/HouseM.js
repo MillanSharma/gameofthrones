@@ -2,6 +2,7 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import "./HouseM.css"
 import useCollapse from 'react-collapsed';
+import { List } from '@mui/material';
 function HouseM() {
     const config = {
         duration:1300
@@ -16,8 +17,7 @@ useEffect(() => {
           .catch((err) => console.log(err));
 
       }, []);
-      let arr = Array(items.length).fill(false)
-      const [isExpanded, setExpanded] = useState(arr);
+      const [isExpanded, setExpanded] = useState(false);
   return (
     <div className='houseM__container'>
        <div className='houseM__innerContainer'>

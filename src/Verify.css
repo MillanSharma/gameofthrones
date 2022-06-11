@@ -1,0 +1,72 @@
+.verifyScreen {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 84.2vh;
+}
+
+.verifyContainer {
+  border-radius: 30px;
+  height: 80%;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: whitesmoke;
+  background-color: rgb(40, 39, 39);
+}
+
+.options {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  background: linear-gradient(rgba(169, 89, 19, 0.73) 0%, rgb(0, 0, 0) 100%);
+  padding: 20px 80px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.option1,
+.option2,
+.option3,
+.option4 {
+  background-color: black;
+  padding: 20px 80px;
+  border-radius: 20px;
+  margin: 20px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.option1:hover,
+.option2:hover,
+.option3:hover,
+.option4:hover {
+  background-color: rgb(52, 52, 52);
+}
+
+.wrongOption {
+  background-color: rgb(161, 1, 1);
+}
+
+.wrongOption:hover {
+  background-color: rgb(161, 1, 1);
+}
+
+.rightchoice {
+  background-color: green;
+}
+
+.rightchoice:hover {
+  background-color: green;
+}
+
+.masterHeader {
+  margin-bottom: 30px;
+}
