@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   BrowserRouter as Router,
   Routes,
@@ -13,8 +13,10 @@ import Houses from "./components/Houses";
 import BuildTshirt from "./components/BuildTshirt";
 import Verify from "./Verify";
 function App() {
-  const [isVerified, setIsVerified] = useState(false);
-
+  const [isVerified, setIsVerified] = useState(
+    JSON.parse(localStorage.getItem("login")) || false
+  );
+ 
   return (
     <div className="App">
       <Router>
@@ -27,7 +29,7 @@ function App() {
               !isVerified ? (
                 <Verify setIsVerified={setIsVerified} />
               ) : (
-                <Welcome />
+                <Welcome /> 
               )
             }
           ></Route>

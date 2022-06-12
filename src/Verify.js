@@ -27,6 +27,7 @@ function Verify({ setIsVerified }) {
                 setTimeout(() => {
                   setIsVerified(true);
                 }, 4000);
+                localStorage.setItem("login",true);
               }}
             >
               Valar dohaeris
