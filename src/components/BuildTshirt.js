@@ -47,9 +47,13 @@ function BuildTshirt() {
   };
 
   return (
-    <div className="tshirt__container">
+    <>
+    <div className="heading">
       <h3>design your custom t-shirt</h3>
-      <h2>Choose your house</h2>
+    </div>
+    <div className="tshirt__container">
+    
+      <div className="col1">
       <div className="logo__container">
         {Object.keys(houselist).map((val) => (
           <img
@@ -60,6 +64,8 @@ function BuildTshirt() {
           />
         ))}
       </div>
+      </div>
+      <div className="col2">
       <form className="tshirt__form">
         <label className="tshirt__label">Enter the text </label>
         <input
@@ -69,6 +75,7 @@ function BuildTshirt() {
           onChange={(e) => setText(e.target.value.slice(0, 9))}
         />
       </form>
+      
       <div className="tshirt__builder">
         <div className="blackTshirt">
           <img
@@ -86,16 +93,24 @@ function BuildTshirt() {
           {text && <div className="textOnTshirt">{text}</div>}
         </div>
         {selectedHouse==null || text==="" ?
-          " ":
+             (
+
+              <button title="Select logo and Enter  text"
+              className="build__addtocart__off"
+              onClick={handleAddToCart}>Add to cart</button>
+              )   
+          :
           (
 
-            <button
+            <button 
             className="build__addtocart"
             onClick={handleAddToCart}>Add to cart</button>
             )  
         }
       </div>
+      </div>
     </div>
+    </>
   );
 }
 
